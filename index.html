@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLearn - Nền Tảng Học Trực Tuyến Miến Phí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-brand" data-target="home">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>FreeLearn</span>
+            </div>
+        </div>
+        <div class="navbar-menu" id="navbarMenu">
+            <div class="nav-item active" data-target="home">Home</div>
+            <div class="nav-item" data-target="code">Code Sharing</div>
+            <div class="nav-item" data-target="documents">Documents</div>
+            <div class="nav-item" data-target="quiz">Quizzes</div>
+        </div>
+        <div class="navbar-right">
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="user-profile" id="userProfile">
+                <i class="fas fa-user"></i>
+                <div class="user-dropdown" id="userDropdown">
+                    <div class="user-info">
+                        <img src="https://picsum.photos/50/50?random=10" alt="User avatar" class="user-avatar">
+                        <div class="user-details">
+                            <h3>Nguyễn Thanh Tài</h3>
+                            <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0624e3334343637353e3e46757273626368722875727328636273287068">[email&#160;protected]</a></p>
+                        </div>
+                    </div>
+                    <ul class="user-menu">
+                        <li class="user-menu-item" data-action="edit-profile">
+                            <i class="fas fa-edit"></i> Edit Profile
+                        </li>
+                        <li class="user-menu-item" data-action="view-history">
+                            <i class="fas fa-history"></i> View History
+                        </li>
+                        <li class="user-menu-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-toggle" id="navbarToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Nâng tầm kiến thức của bạn,<br>Học hỏi, Chia sẻ, Phát triển.</h1>
+                    <p>Truy cập hàng ngàn tài nguyên, chia sẻ mã của bạn và kiểm tra kiến thức của bạn với các bài kiểm tra tương tác.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Get Started</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://picsum.photos/800/600?random=1" alt="Hero image" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Continue Learning -->
+            <h2>Continue Learning</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Course image">
+                    <div class="card-content">
+                        <h3>JavaScript Nâng Cao</h3>
+                        <p>Học các khái niệm nâng cao như closures, promises và async/await.</p>
+                        <div class="card-footer">
+                            <span class="tag">JavaScript</span>
+                            <span class="progress">75% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Course image">
+                    <div class="card-content">
+                        <h3>Python for Data Science</h3>
+                        <p>Khám phá phân tích dữ liệu với Python, bao gồm pandas, numpy và nhiều hơn nữa.</p>
+                        <div class="card-footer">
+                            <span class="tag">Python</span>
+                            <span class="progress">50% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200?random=4" alt="Course image">
+                    <div class="card-content">
+                        <h3>React Cơ Bản</h3>
+                        <p>Xây dựng ứng dụng web hiện đại với React, một thư viện JavaScript phổ biến.</p>
+                        <div class="card-footer">
+                            <span class="tag">React</span>
+                            <span class="progress">30% Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Section -->
+            <h2>Explore Tools</h2>
+            <div class="tools">
+                <div class="tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Code Sharing</h3>
+                    <p>Share your code snippets with the community and get feedback.</p>
+                    <a href="#" class="tool-link" data-target="code">Try Now</a>
+                </div>
+                <div class="tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Documents</h3>
+                    <p>Access a wide range of study materials and resources.</p>
+                    <a href="#" class="tool-link" data-target="documents">Explore</a>
+                </div>
+                <div class="tool">
+                    <div class="tool-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Quizzes</h3>
+                    <p>Test your knowledge with interactive quizzes and challenges.</p>
+                    <a href="#" class="tool-link" data-target="quiz">Start Quiz</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Sharing Section -->
+        <section id="code" class="content-section">
+            <h2>Code Sharing</h2>
+            <div class="upload-code">
+                <input type="file" id="codeUpload" accept=".js,.py,.java,.ts,.cpp,.html,.css" multiple>
+                <label for="codeUpload" class="btn btn-primary">
+                    <i class="fas fa-upload"></i> Upload Code
+                </label>
+            </div>
+            <div class="filter-tags">
+                <span class="filter-tag active">All</span>
+                <span class="filter-tag">JavaScript</span>
+                <span class="filter-tag">Python</span>
+                <span class="filter-tag">Java</span>
+            </div>
+            <div class="code-snippets">
+                <div class="code-card">
+                    <div class="code-header">
+                        <h3>Simple To-Do App</h3>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <pre><code>function addTask() {
+    const task = document.getElementById('taskInput').value;
+    const list = document.getElementById('taskList');
+    const li = document.createElement('li');
+    li.textContent = task;
+    list.appendChild(li);
+}</code></pre>
+                    <div class="code-actions">
+                        <span class="code-action"><i class="far fa-heart"></i> <span>10</span></span>
+                        <span class="code-action"><i class="far fa-bookmark"></i></span>
+                    </div>
+                </div>
+                <div class="code-card">
+                    <div class="code-header">
+                        <h3>Palindrome Checker</h3>
+                        <span class="tag">Python</span>
+                    </div>
+                    <pre><code>def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
+
+print(is_palindrome("Racecar"))</code></pre>
+                    <div class="code-actions">
+                        <span class="code-action"><i class="far fa-heart"></i> <span>15</span></span>
+                        <span class="code-action"><i class="far fa-bookmark"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents Section -->
+        <section id="documents" class="content-section">
+            <h2>Documents</h2>
+            <div class="documents">
+                <!-- Document Card 1 -->
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="document-content">
+                        <h3>Jump Start MySQL</h3>
+                        <p>Hướng dẫn toàn diện về MySQL</p>
+                        <div class="document-footer">
+                            <span class="tag">PDF</span>
+                            <button class="document-download btn btn-blue" onclick="window.location.href='https://drive.google.com/drive/folders/1jsE8Ur7G-TG6fgKfKrFC1WrLjsotU65p'">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Document Card 2 -->
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="document-content">
+                        <h3>Web Development - Thiết kế web theo chuẩn</h3>
+                        <p>Đây là quyển sách trang bị cho bạn kiến thức thiết kế website theo chuẩn SEO.</p>
+                        <div class="document-footer">
+                            <span class="tag">PDF</span>
+                            <button class="document-download btn btn-green" onclick="window.location.href='https://drive.google.com/file/d/1amHOgJiP1SVr8-V6i5t7bKbku7O-GuXW/view?usp=sharing'">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Document Card 3 -->
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-powerpoint"></i>
+                    </div>
+                    <div class="document-content">
+                        <h3>50 Câu hỏi phỏng vấn cấu trúc dữ liệu và thuật toán</h3>
+                        <p>Bộ tài liệu được chia sẻ từ code gym giúp bạn có cái nhìn bao quát về quá trình phỏng vấn và nắm bắt được các câu hỏi phỏng vấn từ phía doanh nghiệp</p>
+                        <div class="document-footer">
+                            <span class="tag">Slides</span>
+                            <button class="document-download btn btn-purple" onclick="window.location.href='https://drive.google.com/file/d/1WE-C6VR0moSeDpv_YI2c7zOM9QtawQXe/view?usp=drive_link'">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quizzes Section -->
+        <section id="quiz" class="content-section">
+            <h2>Bài Kiểm Tra</h2>
+            <div class="quiz-header">
+                <h3>Bài Kiểm Tra HTML, CSS & JavaScript</h3>
+                <div class="quiz-timer">
+                    Thời Gian Còn Lại: <span>45:00</span>
+                </div>
+            </div>
+            <div class="quiz-container">
+                <!-- Các câu hỏi sẽ được thêm bằng JavaScript -->
+            </div>
+            <div class="quiz-navigation">
+                <button id="prev-question" disabled>Trước</button>
+                <span id="quiz-progress">Câu Hỏi 1/50</span>
+                <button id="next-question">Tiếp Theo</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-toggle" id="chatToggle">
+            <i class="fas fa-headphones"></i>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h3>Ask a Question</h3>
+                <i class="fas fa-times chat-close" id="chatClose"></i>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <p>Hello! How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        (function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e1809e0ca5b08b',t:'MTc0Njk2NDY4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
+    </script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93e1b69f2b3cbff1',t:'MTc0Njk2Njg5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+
+</html>
